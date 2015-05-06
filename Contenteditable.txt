@@ -1,0 +1,26 @@
+data:text/html,
+
+<html contenteditable = "true" align = "left">
+
+<title>[Window] Title</title>
+
+<script type = "text/javascript">
+function changeTitle()
+{
+     document.title = prompt("New Title","[Window] Title");
+}
+</script>
+<head>
+<script type = "text/javascript">
+changeTitle();
+</script>
+</head>
+
+<div id = "button" contenteditable = "false">
+<input id = "changeTitle" type = "button" value = "Change Title" onclick = "changeTitle();" />
+</div>
+
+<div id = "main" contenteditable = "true">
+<br>
+</div>
+</html>
